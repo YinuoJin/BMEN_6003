@@ -1,4 +1,4 @@
-Scripts
+Code Structure
 ```
 balloon.m:         - Calculate balloon volumes
 calibrate.m        - Calculate cm/pixel from videos
