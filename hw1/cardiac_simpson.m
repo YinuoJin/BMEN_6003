@@ -1,16 +1,16 @@
 % Caldiac functions with modified Simpson's rule
 
 %% (1). Load sample video, get cm/pixel unit-transformation
-%{
+
 f = "data/Apical4chVolunteer.mp4";
 xrange = [100, 200];
 yrange = [550, 600];
 [height, width, scale] = calibrate(f, xrange, yrange);
 clear f xrange yrange
-%}
+
 
 %% (2). Measure ventricular diameters (ED, ES) in each videos
-%{
+
 files = "data/" + [
          "Apical4chVolunteer.mp4"   % Apical view
          "SA_ApexVolunteer.mp4"     % Apex
@@ -42,7 +42,6 @@ for i = 1:length(files)
     
     close(fig);
 end
-%}
 
 
 %% (3). Calculate Volumes
