@@ -1,4 +1,4 @@
 *.asv
-*data/
-*.csv
-*.txt
+*.mp4
+*.DS_Store
+*.ipynb
